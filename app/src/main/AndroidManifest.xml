@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".SettingsActivity"/>
         <service android:name=".VibrationService"/>
+        <receiver android:name=".AlarmReceiver"
+            android:process=":remote"/>
     </application>
 
     <uses-permission
