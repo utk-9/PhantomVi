@@ -6,29 +6,109 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time Period"
-
+        android:layout_margin="20dp"
+        android:text="Choose Ring:"
         android:id="@+id/time_period_textView"/>
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIbrate"
+        android:id="@+id/checkBoxVibrate"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook Messanger"
+        android:id="@+id/checkBoxFacebook"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxVibrate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whale noises"
+        android:id="@+id/checkBoxWhaleNoises"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxFacebook"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default notification sound"
+        android:id="@+id/checkBoxNotification"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxWhaleNoises"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!--
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
          />
-
+    -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop After"
+        android:text="Frequency"
+        android:layout_margin="30dp"
         android:id="@+id/stop_after_textView"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minutely"
+            android:id="@+id/radioButtonMinutely"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hourley"
+            android:id="@+id/radioButtonHourley"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily"
+            android:id="@+id/radioButtonDailey"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Stop After"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText2" />
+
+    <Button
+        android:layout_height="80dp"
+        android:layout_width="fill_parent"
+        android:layout_margin="15dp"
+        android:text="Go"
+        android:id="@+id/goButton" />
 
 </LinearLayout>
