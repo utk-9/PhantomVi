@@ -19,7 +19,11 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
+/*
+Terrible project made by:
+Utkarsh Lamba, Matt D'Souza and Spencer Dobrick
+during Terrible Hack II at uWaterloo
+ */
    
 public class VibrationService extends IntentService {
     @Nullable
